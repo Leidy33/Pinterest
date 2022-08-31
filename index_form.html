@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form name="formulario" action="" method="POST">
+        <!--Opciones para que el usuario ingrese la información, placeholder-->
+        <!--required quiere decir que si no rellena la información no lo dejará continuar en el formulario,
+        la información es requerida-->
+        <!--br, da espacios y pone en el enviar justo debajo de la información a completar-->
+        <!--Quiere decir que es un botón para enviar la información-->
+        <input type="text" name="Primer_nombre" 
+        placeholder="Ingresa tu primer nombre" 
+        maxlength="15" 
+        minlength="2" 
+        size="30" 
+        required 
+        >
+        <br>
+        <br>
+        <input
+        type="password"
+        name="contraseña"
+        placeholder="Ingresa tu contraseña" 
+        size="18"
+        required
+        >
+
+        <br>
+        <br>
+        <input
+            type="number"
+            name="numero"
+            min="-1"
+            max="10"
+            size="3"
+            value="5"
+        >
+        <br>
+        <br>
+        <label>
+            Si o No
+            <input 
+            type="checkbox"
+
+            >
+            <br>
+        </label>
+        <br>
+        <br>
+
+        <p>Rango de edad:</p>
+        <label>
+            0 - 30
+            <input
+            type="radio"
+            name="edad"
+            value="0 - 30"
+            >
+        </label>
+        <br>
+        <label>
+            31 - 40
+            <input
+            type="radio"
+            name="edad"
+            value="31 - 40"
+            >
+        </label>
+        <br>
+        <label>
+            41 - 50
+            <input
+            type="radio"
+            name="edad"
+            value="41 - 50"
+            >
+        </label>
+        <br>
+        <br>
+        <label
+        for="preferida">
+        ingresa tu hora preferida
+        <input
+        id="preferia"
+        type="time"
+        name="hora preferida"
+        min="09:00"
+        >
+        </label>
+        
+        <br>
+        <br>
+        <label for="sex">
+            Genero
+        </label>
+        <select name="genero" id="sex">
+            <option value="hombre">hombre</option>
+            <option value="mujer">mujer</option>
+            <option value="otro">otro</option>
+        </select>
+        <br>
+        <textarea
+        placeholder="Ingresa una observacion"
+        name="observacion"
+        rows="10"
+        cols="35"
+        >
+        </textarea>
+        <br>
+        <button type="submit">
+            enviar
+        </button>
+        
+    </form>
+</body>
+</html>
